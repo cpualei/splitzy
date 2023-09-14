@@ -8,6 +8,7 @@ to rebuild a database with sqlalchemy:
 - run: flask seed all
 
 heroku commands:
+
 heroku run -a splitzy-app flask db migrate
 heroku run -a splitzy-app flask db upgrade
 heroku run -a splitzy-app flask seed all
