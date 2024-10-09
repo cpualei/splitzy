@@ -2,6 +2,18 @@ services:
   - type: web
     name: splitzy
     env: python
-    buildCommand: "pip install -r requirements.txt"
+    buildCommand: "pip install -r app/requirements.txt"
     startCommand: "gunicorn app:app"
     pythonVersion: 3.9
+    build:
+      # Specify the backend directory to deploy
+      path: app
+
+  - type: web
+    name: frontend-service
+    env: node
+    buildCommand: "cd react-app && npm install"
+    startCommand: "cd react-app && npm start"
+    build:
+      # Specify the frontend directory to deploy
+      path: react-app
