@@ -9,9 +9,9 @@ to rebuild a database with sqlalchemy:
 
 heroku commands:
 
-heroku run -a splitzy-app flask db migrate
-heroku run -a splitzy-app flask db upgrade
-heroku run -a splitzy-app flask seed all
+heroku run -a splitzyapp flask db migrate
+heroku run -a splitzyapp flask db upgrade
+heroku run -a splitzyapp flask seed all
 
 to only drop the data from the databse:
 - run: flask undo all
