@@ -21,7 +21,7 @@ splitzy provides users the ability to search and add other users as friends and 
 1. Clone the main repository
 
    ```bash
-   git clone https://github.com/ukiukica/splitzy.git
+   git clone https://github.com/cpualei/splitzy.git
    ```
 
 2. Install the dependencies
