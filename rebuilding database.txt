@@ -3,7 +3,7 @@ to rebuild a database with sqlalchemy:
 - drop database, then create it
 - delete all migration versions
 - start the shell
-- run: flask db migrate -m
+- run: flask db migrate
 - run: flask db upgrade
 - run: flask seed all
 
